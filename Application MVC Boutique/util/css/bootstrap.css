@@ -12,6 +12,17 @@ html {
 body {
   margin: 0;
 }
+
+.navbar li{
+  display:inline;
+ }
+ 
+.navbar li a{
+  margin-right: 5px;
+  padding: 20px  88px;
+  background-color:black;
+  color: white;
+} 
 article,
 aside,
 details,

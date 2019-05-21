@@ -9,11 +9,11 @@ function connexion()
    return $connexion;
 }
 
-function verifLogin($login, $mdp)
+function verifLogin($nom, $mdp)
 {
   $admin = null;
   $connexion = connexion();
-  $requete = "select nom from administrateur where nom='$login' and mdp='$mdp';";
+  $requete = "select nom from administrateur where nom='$nom' and mdp='$mdp';";
   $resultat = $connexion->query($requete);
   $admin = $resultat->fetch();
   return $admin;
@@ -186,6 +186,18 @@ function estAdmin()
 	else {
 		return false;
         }
+}
+
+function getErreursAdmin($nom,$mdp)
+{
+	$msgErreurs = array ();
+ if(!leNom($nom)){
+	$msgErreurs[]="erreur sur le pseudo !";
+ }
+ if(!lemdp($mdp)){
+  $msgErreurs[]="erreur sur le mot de passe !";
+ }
+
 }
 
 function estPrix($valeur)

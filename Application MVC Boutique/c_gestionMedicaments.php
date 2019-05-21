@@ -3,12 +3,12 @@ $action = $_REQUEST["action"];
 switch ($action)
 {
   case 'identification':
-  include("vues/v_login.php");
+  include("vues/v_admin.php");
   break;
   
   case 'testIdentification':
-  include("vues/v_login.php");
-  $admin = verifLogin($_REQUEST["login"], $_REQUEST["mdp"]);
+  include("vues/v_admin.php");
+  $admin = verifLogin($_REQUEST["nom"], $_REQUEST["mdp"]);
   if ($admin == null)
   {
     $err = 2;

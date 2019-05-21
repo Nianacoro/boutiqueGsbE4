@@ -5,20 +5,22 @@
 <a href="http://zupimages.net/viewer.php?id=19/20/cm5v.png"><img src="https://zupimages.net/up/19/20/cm5v.png" alt="LogoGSB" style="center-align"/></a>
 </div>
 
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link href="util/css/bootstrap.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" /> 
+  </head>
+
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class="active"> <a href="#">Acc</a> </li>
-      <li> <a href="index.php?uc=accueil">Accueil</a> </li>
-      <li> <a href="index.php?uc=voirMedicaments&action=voirCategories">Voir Catalogue</a> </li>
-      <li> <a href="index.php?uc=gererPanier&action=voirPanier">>Voir Panier</a> </li>
-      <li> <a href="index.php?uc=administrer&action=testIdentification">Administrateur</a> </li>
-    </ul>
-    <form class="navbar-form navbar-right inline-form">
-      <div class="form-group">
-        <input type="search" class="input-sm form-control" placeholder="Recherche">
-        <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
-      </div>
-    </form>
+      <li><h2> <a href="index.php?uc=accueil">Accueil</a></h2></li>
+      <li><h2> <a href="index.php?uc=voirMedicaments&action=voirCategories">Catalogue</a><h2></li>
+      <li><h2><a href="index.php?uc=gererPanier&action=voirPanier">Panier</a></h2></li>
+      <li><h2><a href="index.php?uc=administrer&action=testIdentification">Administrateur</a></h2></li>
   </div>
 </nav>

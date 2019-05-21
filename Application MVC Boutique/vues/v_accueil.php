@@ -6,7 +6,7 @@
 ?>
 <br/>
 <br></br>
-<br>
-Bienvenue sur notre boutique internet de vente d'antibitotiques...<br/>
+<br><h1>
+Bienvenue sur notre boutique internet de vente d'antibiotiques...<br/>
 Pour commander, commencez par sélectionner vos médicaments dans le catalogue.
-</div>
+<h1></div>

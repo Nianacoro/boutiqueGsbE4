@@ -19,6 +19,8 @@ function verifLogin($nom, $mdp)
   return $admin;
 }
 
+
+
 function modification($unId, $unNom, $unPrix)
 {
   $admin = null;

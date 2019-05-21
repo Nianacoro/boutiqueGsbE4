@@ -1,3 +1,33 @@
+<?php
+$pseudo = 'niana130';
+$mdp_definit  = 'n1234';
+
+if(isset($_POST['submit'])){
+$nom = $_POST['nom'];
+$mdp= $_POST['mdp'];
+
+
+if($nom&&$mdp){
+  
+  if ($pseudo==$nom&&$mdp==$mdp_definit){
+
+    $_SESSION['nom']= $nom;
+  header('Location: admin.php');
+
+}else{
+   echo"Identifiants eronnés";
+
+}
+
+}else{
+   echo "Veuillez remplir tous les champs !";
+ }
+
+}
+?>
+
+
+
 <head>
     <meta charset="utf-8">
     <link href="util/css/bootstrap.css" rel="stylesheet">
